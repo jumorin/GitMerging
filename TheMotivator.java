@@ -9,8 +9,14 @@ public class TheMotivator {
 		else
 			System.out.println("Well, what can I say?");
 	}
+	
+	public void printScore(int score) {
+		System.out.println("Your score is " + score);
+	}
+	
 	public static void main(String[] args) {
 		TheMotivator tm = new TheMotivator();
+		tm.printScore(60); 
 		tm.myComments(60);
 	}
 }
