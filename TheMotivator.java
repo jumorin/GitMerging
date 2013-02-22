@@ -1,7 +1,7 @@
 public class TheMotivator {
 	public void myComments(int score) {
 		if (score == 100)
-			System.out.println("You're awesome");
+			System.out.println("Perfect Score!");
 		else if (score > 90)
 			System.out.println("That's great");
 		else if (score > 60)
@@ -18,5 +18,8 @@ public class TheMotivator {
 		TheMotivator tm = new TheMotivator();
 		tm.printScore(60); 
 		tm.myComments(60);
+		TheMotivator pm = new TheMotivator(); 
+		pm.printScore(70);
+		pm.myComments(70);
 	}
 }
