@@ -1,5 +1,12 @@
 public class TheMotivator {
-	public void myComments(int score) {
+	private int score; 
+	
+	public TheMotivator(int score) {
+		super();
+		this.score = score;
+	}
+
+	public void myComments() {
 		if (score == 100)
 			System.out.println("You're awesome");
 		else if (score > 90)
@@ -10,13 +17,16 @@ public class TheMotivator {
 			System.out.println("Not so stellar");
 	}
 	
-	public void printScore(int score) {
+	public void printScore() {
 		System.out.println("Your score is " + score);
 	}
 	
 	public static void main(String[] args) {
-		TheMotivator tm = new TheMotivator();
-		tm.printScore(60); 
-		tm.myComments(60);
+		TheMotivator tm = new TheMotivator(60);
+		tm.printScore(); 
+		tm.myComments();
+		TheMotivator jm = new TheMotivator(85);
+		jm.printScore(); 
+		jm.myComments(); 
 	}
 }
