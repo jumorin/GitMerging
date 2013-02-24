@@ -22,20 +22,14 @@ public class TheMotivator {
 	}
 	
 	public void printScore() {
-		System.out.println("Your score is " + score);
-	}
-	
-	public void printName() {
-		System.out.println(name + ":");
+		System.out.println(name + ": Your score is " + score);
 	}
 	
 	public static void main(String[] args) {
 		TheMotivator tm = new TheMotivator(60, "Tim");
-		tm.printName(); 
 		tm.printScore(); 
 		tm.myComments();
 		TheMotivator jm = new TheMotivator(85, "Jim");
-		jm.printName(); 
 		jm.printScore(); 
 		jm.myComments(); 
 	}
